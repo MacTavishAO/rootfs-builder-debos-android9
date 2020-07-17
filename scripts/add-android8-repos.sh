@@ -60,17 +60,6 @@ wget https://build.lolinet.com/file/overlay-reader/liboverlay-reader-dev_0.1.0_a
 dpkg -i /root/overlay-reader/*.deb
 rm -rf /root/overlay-reader
 
-# custom repowerd
-mkdir -p /root/repowerd
-wget https://build.lolinet.com/file/repowerd/powerd_2018.04+ubports_all.deb -P /root/repowerd/
-wget https://build.lolinet.com/file/repowerd/repowerd_2018.04+ubports_armhf.deb -P /root/repowerd/
-wget https://build.lolinet.com/file/repowerd/repowerd-data_2018.04+ubports_all.deb -P /root/repowerd/
-wget https://build.lolinet.com/file/repowerd/repowerd-tools_2018.04+ubports_armhf.deb -P /root/repowerd/
-
-dpkg -i /root/repowerd/*.deb
-rm -rf /root/repowerd
-apt-mark hold powerd repowerd repowerd-data repowerd-tools
-
 # qtubuntu-position
 mkdir -p /root/qtubuntu-position
 wget https://build.lolinet.com/file/qtubuntu-position/qtubuntu-position_0.1%2Bubports_armhf.deb -P /root/qtubuntu-position/
